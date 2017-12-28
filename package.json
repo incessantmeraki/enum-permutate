@@ -1,0 +1,26 @@
+{
+  "name": "enum-permutate",
+  "version": "1.0.0",
+  "description": "generates permutation of elements in an array",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incessantmeraki/enum-permutate.git"
+  },
+  "keywords": [
+    "permutation",
+    "enumeration"
+  ],
+  "author": "Ashwin Kandel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/incessantmeraki/enum-permutate/issues"
+  },
+  "homepage": "https://github.com/incessantmeraki/enum-permutate#readme",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}
