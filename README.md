@@ -1,5 +1,5 @@
 # enum-permutate
-[![Build Status](https://travis-ci.org/incessantmeraki/enum-nck.svg?branch=master)](https://travis-ci.org/incessantmeraki/enum-nck)
+[![Build Status](https://travis-ci.org/incessantmeraki/enum-permutate.svg?branch=master)](https://travis-ci.org/incessantmeraki/enum-permutate)
 
 generates all possible arrangement of elements in a given array
 
