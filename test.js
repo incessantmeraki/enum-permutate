@@ -15,6 +15,13 @@ test('second test', function (t) {
   t.end()
 })
 
+test('third test', function (t) {
+  var elements = [1, 2, 3, 1, 2, 3]
+  var output = permutate(elements)
+  t.equal(output.length, factorial(elements.length) / Math.pow(factorial(2), 3))
+  t.end()
+})
+
 function factorial(n) {
   var result = 1
   for (let i = 1; i <= n; i++) {

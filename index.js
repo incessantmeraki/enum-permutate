@@ -1,5 +1,12 @@
 module.exports = function (arr) {
   var output = []
+  var categories = new Map()
+
+  arr.forEach((val) => {
+    let count = categories.get(val) || 0
+    categories.set(val, ++count)
+  })
+
   permutate(0)
   return output
 
@@ -9,17 +16,14 @@ module.exports = function (arr) {
       return
     }
 
-    for (let i = index; i < arr.length; i++) {
-      let tmp = arr[i]
-      arr[i] = arr[index]
-      arr[index] = tmp
-
-      permutate(index + 1)
-
-      tmp = arr[i]
-      arr[i] = arr[index]
-      arr[index] = tmp
-    }
+    categories.forEach((val, key) => {
+      if (val > 0) {
+        arr[index] = key
+        categories.set(key, --val)
+        permutate(index + 1)
+        categories.set(key, ++val)
+      }
+    })
   }
 }
 
